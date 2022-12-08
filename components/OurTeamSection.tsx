@@ -30,12 +30,12 @@ export const OurTeamSection = ()=>{
   ]
 
   return(
-    <Section sectionExtraStyle="bg-main_green h-[736px] pt-[90px]" >
+    <Section sectionExtraStyle="bg-main_green lg:h-[736px] pt-[90px] pb-10 lg:pb-0" >
       <div className="text-center">
         <MainFontText text="OUR TEAM" extrastyle="text-base"/>
         <MainFontText text="Who are we?" extrastyle="text-[42px] pb-[51px]"/>
       </div>
-      <div className="flex w-[946px] justify-between m-auto">
+      <div className="lg:flex lg:w-[946px] justify-between m-auto">
         {OurTeamSectionData.map(person=>{
           return(
             <Profile src={person.src} position={person.position} name={person.name} email={person.email} key={person.name} />

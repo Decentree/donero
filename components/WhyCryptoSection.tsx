@@ -14,11 +14,11 @@ export const WhyCryptoSection =()=>{
 
   return(
     <Section sectionExtraStyle="bg-main_baige h-[558.96px] py-[139px]">
-      <div className="flex">
-        <div className="border border-black w-1/2">
+      <div className="lg:flex">
+        <div className="border border-black lg:w-1/2">
           <div className="px-[22px]">
             <MainFontText text="WHY CRYPTO" extrastyle="text-base"/>
-            <MainFontText text="Raising funds with crypto" extrastyle="text-[42px] w-[615px] pb-[51px]"/>
+            <MainFontText text="Raising funds with crypto" extrastyle="text-[42px] lg:w-[615px] pb-[51px]"/>
           </div>
           {WhyCryptoSectionData.map(text=>{
             return(
