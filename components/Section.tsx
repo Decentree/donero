@@ -9,7 +9,7 @@ interface ISection {
 export const Section = ({backgroundColor,sectionExtraStyle,children}:ISection)=>{
   return(
     <div className={clsx(backgroundColor, sectionExtraStyle)} >
-      <div className="max-w-section m-auto">
+      <div className="max-w-section m-auto lg:p-0">
         {children}
       </div>
     </div>

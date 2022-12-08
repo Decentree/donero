@@ -10,7 +10,9 @@ module.exports = {
         main_green:"#F4F7EC",
         main_baige:"#FFFBF0",
         border_green:"#B7E459",
-        text_green:"#5A7A1F"
+        text_green:"#5A7A1F",
+        button_background:"#FFE3A1",
+        button_text:"#4C350D"
       },
       width:{
         "1/2":"50%"

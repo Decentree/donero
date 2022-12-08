@@ -10,11 +10,11 @@ interface IButton {
 export const Button = ({text,disabled,extrastyle}:IButton)=>{
   return(
     <button 
-      className={clsx("hover:bg-[#FFE3A1]/80 bg-[#FFE3A1] h-[48px] rounded-md px-[22px]",extrastyle)} 
+      className={clsx("hover:bg-button_background/80 bg-button_background h-[48px] rounded-md px-[22px]",extrastyle)} 
       type="submit" 
       disabled={disabled}
     >
-      <MainFontText extrastyle="text-sm uppercase" text={text}/>
+      <MainFontText extrastyle="text-sm text-button_text uppercase" text={text}/>
     </button>
   )
 }

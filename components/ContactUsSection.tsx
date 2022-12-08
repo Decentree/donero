@@ -20,15 +20,15 @@ export const ContactUsSection = ()=>{
 
     
   return(
-    <Section sectionExtraStyle="bg-[url('/images/ColorfulBackground.png')] py-[50px] lg:py-[0] lg:pt-[177px] lg:pb-[180px] lg:px-[347px]">
+    <Section sectionExtraStyle="bg-[url('/images/ColorfulBackground.png')] py-[50px] lg:py-[0] lg:pt-[177px] lg:pb-[180px] px-[20px] lg:px-[347px] mb-[100px] lg:mb-0">
       <div className="text-center">
         <MainFontText text="CONTACT US" extrastyle="text-base"/>
-        <MainFontText text="Do you want to start a campaign?" extrastyle="text-[42px] pb-[7px]"/>
+        <MainFontText text="Do you want to start a campaign?" extrastyle="text-[30px] md:text-[42px] pb-[7px]"/>
         <p className="font-main_font font-normal">Leave us your email and we will contact you with all the information</p>
       </div>
       <form className="sm:flex m-auto mt-[41px] w-fit" method="post" onSubmit={onSubmit}>
         <input 
-          className="w-[383px] h-[48px] mr-[16px] pl-6 border border-[#E6E6E6] rounded-xl main-input my-4" name="email" aria-label="Email" required
+          className="w-fit lg:w-[383px] h-[48px] mr-[16px] pl-6 border border-[#E6E6E6] rounded-xl main-input my-4" name="email" aria-label="Email" required
           type="email" 
           placeholder="Email" 
           disabled={loading || error || sent}

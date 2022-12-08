@@ -8,7 +8,7 @@ interface IPipeLine {
 
 export const PipeLine =({text}:IPipeLine)=>{
   return(
-    <div className="flex flex-row mb-[8px]">
+    <div className="w-[450px] lg:w-fit m-auto lg:m-0 flex flex-row mb-[8px]">
       <img
         src={Pipe.src}
         className="self-center mr-[20px] h-[16px] w-[16px]"

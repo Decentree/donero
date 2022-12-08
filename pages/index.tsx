@@ -4,16 +4,18 @@ import { OurTeamSection } from "../components/OurTeamSection"
 import { PopularCampaignsSection } from "../components/PopularCampaignsSection"
 import { TopSection } from "../components/TopSection"
 import { WhyCryptoSection } from "../components/WhyCryptoSection"
+import { Footer } from "../components/Footer"
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <TopSection />
       <PopularCampaignsSection />
       <HowDoesDoneroWorkSection />
       <WhyCryptoSection/>
       <OurTeamSection />
       <ContactUsSection />
+      <Footer />
     </div>
   )
 }
