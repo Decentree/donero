@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.CreateCampaignFrame {
+  background: linear-gradient(180deg, #FFF4DB 0%, #FFFBF1 100%);
+}
+
 /*html,
 body {
   padding: 0;

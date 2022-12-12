@@ -1,24 +1,46 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
 import { Section } from "./Section"
-import CollectDonations from "public/images/CollectDonations.png"
-import CreateYourCampaign from "public/images/CreateYourCampaign.png"
-import HelpYourCause from "public/images/HelpYourCause.png"
+import CreateCampagin_01 from "public/images/CreateCampaign_01.png"
+import CreateCampagin_02 from "public/images/CreateCampaign_02.png"
+import CreateCampagin_03 from "public/images/CreateCampaign_03.png"
 import { MainFontText } from "./MainFontText"
+import { CreateCampaignFrame } from "./CreateCampaignFrame"
 
+const DATA = [{
+  number:1,
+  picture:CreateCampagin_01.src,
+  title:"Create your campaign",
+  text:"Which deserves financial support"
+},
+{
+  number:2,
+  picture:CreateCampagin_02.src,
+  title:"Collect donations",
+  text:"As much as needed"
+},
+{
+  number:3,
+  picture:CreateCampagin_03.src,
+  title:"Help your cause",
+  text:"Have a positive impact on those around you"
+}
+]
 
 export const HowDoesDoneroWorkSection = ()=>{
 
   return(
-    <Section sectionExtraStyle="bg-center bg-no-repeat bg-[url('/images/ColorfulBackground.png')] lg:h-[729px] py-[50px] lg:py-[139px]">
+    <Section sectionExtraStyle="bg-center bg-no-repeat bg-[url('/images/ColorfulBackground.png')] xl:h-[729px] py-[50px] lg:py-[139px]">
       <div className="px-[22px]">
-        <MainFontText text="HOW DOES DONERO WORK" extrastyle="text-center lg:text-left text-base"/>
-        <MainFontText text="Create campaigns and collect dontations via crypto" extrastyle="text-center lg:text-left text-[30px] md:text-[42px] lg:w-[615px] pb-[51px]"/>
+        <MainFontText text="HOW DOES DONERO WORK" extrastyle="text-center xl:text-left text-base"/>
+        <MainFontText text="Create campaigns and collect dontations via crypto" extrastyle="text-center xl:text-left text-[30px] md:text-[42px] xl:w-[615px] pb-[51px]"/>
       </div>
-      <div className="justify-between lg:flex">
-        <img className="m-auto mb-10 lg:mb-0 lg:m-0" src={CreateYourCampaign.src} />
-        <img className="m-auto mb-10 lg:mb-0 lg:m-0" src={CollectDonations.src} />
-        <img className="m-auto lg:m-0" src={HelpYourCause.src} />
+      <div className="justify-between xl:flex">
+        {DATA.map(section=>{
+          return(
+            <CreateCampaignFrame number={section.number} picture={section.picture} title={section.title} text={section.text} key={section.number} />
+          )
+        })}
       </div>
     </Section>
   )

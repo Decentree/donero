@@ -3,7 +3,7 @@
 import { Section } from "./Section"
 import { Button } from "./Button"
 import { MainFontText } from "./MainFontText"
-import Logo from "public/icons/Logo.png"
+import Donero from "public/icons/Donero.svg"
 import Forrest from "public/images/Forrest.png"
 import Technology from "public/images/Technology.png"
 
@@ -11,10 +11,9 @@ export const TopSection = ()=>{
   return(
     <Section backgroundColor="bg-main_green" sectionExtraStyle="lg:h-[709px] pt-[37.5px]">
       <div className="mx-[22px] flex px-10 xl:px-0 mb-[-500px]">
-        <img
-          src={Logo.src}
-          className="self-center"
-        />
+        <div>
+          <Donero />
+        </div>
         <div className="w-full z-10">
           <Button text="Start a campagin" extrastyle="float-right"/>
         </div>
