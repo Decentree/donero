@@ -25,9 +25,9 @@ export const TopSection = ()=>{
       />
       <div className="flex">
         <div className="mt-[117px] text-center lg:text-left lg:flex m-auto">
-          <div className="m-auto lg:w-[684px] xl:mr-[74px] pt-[20px] lg:pt-[70px]">
+          <div className="m-auto lg:w-[684px] xl:mr-[74px] pt-[20px] lg:pt-[70px] p-2 lg:p-0">
             <MainFontText text="HELP WHERE NECESSARY" extrastyle="text-base"/>
-            <MainFontText text="Raising money for projects that matter" extrastyle="z-10 relative lg:w-[684px] mt-[20px] lg:mt-[0px] mb-[36px] px-[22px] md:px-0 text-[42px] lg:text-[64px]"/>
+            <MainFontText text="Raising money for projects that matter" extrastyle="z-10 relative xl:w-[684px] mt-[20px] lg:mt-[0px] mb-[36px] px-[22px] md:px-0 text-[42px] lg:text-[64px]"/>
             {/*
               <Button extrastyle="mb-10 lg:mb-0" text="Browse campaigns"/>
             */}
