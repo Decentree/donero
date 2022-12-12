@@ -28,7 +28,7 @@ export const ContactUsSection = ()=>{
       </div>
       <form className="sm:flex m-auto mt-[41px] w-fit" method="post" onSubmit={onSubmit}>
         <input 
-          className="w-fit w-[320px] lg:w-[383px] h-[48px] mr-[16px] pl-6 border border-[#E6E6E6] rounded-xl main-input my-4" name="email" aria-label="Email" required
+          className="focus:outline-none w-fit w-[320px] lg:w-[383px] h-[48px] mr-[16px] pl-6 border border-[#E6E6E6] rounded-xl main-input my-4" name="email" aria-label="Email" required
           type="email" 
           placeholder="Email" 
           disabled={loading || error || sent}
