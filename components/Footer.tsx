@@ -6,14 +6,14 @@ import DoneroAndDecentree from "public/icons/DoneroAndDecentree.svg"
 export const Footer = ()=>{
   return(
     <div>
-      <Section sectionExtraStyle="px-10">
-        <div className="m-auto lg:m-0 w-fit">
+      <Section sectionExtraStyle="px-10 mt-[55px]">
+        <div className="mt-[21.5px] m-auto lg:m-0 w-fit">
           <DoneroAndDecentree />
         </div>
-        <p className="text-[#737373] text-sm w-[379px] m-auto lg:m-0 text-center lg:text-left pb-[59px] mt-[13px]">Our mission is to utilise blockchain to help as many people as possible.</p>
+        <p className="w-[379px] m-auto lg:m-0 mb-[10px] pt-[20px] lg:pb-[59px] text-[#737373] text-sm text-center lg:text-left">Our mission is to utilise blockchain to help as many people as possible.</p>
         <div className="absolute left-0 bottom-50 border-t border-[#E4E5E5] w-full"></div>
         <div className="lg:flex items-center lg:h-[87px]">
-          <p className="my-5 lg:my-0 sm:w-[500px] text-[#737373] text-sm m-auto lg:m-0 text-center lg:text-left">© 2022 Donero s. r. o. Všechna práva vyhrazena.</p>
+          <p className="my-5 lg:my-0 sm:w-[500px] text-[#737373] text-sm m-auto lg:m-0 text-center lg:text-left">©Donero Foundation s.r.o. Všechna práva vyhrazena.</p>
         </div>
       </Section>
     </div>

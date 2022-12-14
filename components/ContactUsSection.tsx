@@ -1,23 +1,8 @@
 import { Section } from "./Section"
 import { MainFontText } from "./MainFontText"
 import { Button } from "./Button"
-import { useState } from "react"
 
 export const ContactUsSection = ()=>{
-
-  const [loading, isLoading] = useState(false)
-  const [error, isError] = useState(false)
-  const [sent, isSent] = useState(false)
-
-  const onSubmit = (event:any) => {
-    isLoading(true)
-    const formData = new FormData(event.target)
-    fetch("/email", {method: "POST", body: JSON.stringify(Object.fromEntries(formData)), 
-      headers:{
-        "Content-Type": "application/json"
-      }}).then(()=>isSent(true)).catch(() => isError(true)).finally(() => isLoading(false))
-  }
-
     
   return(
     <Section sectionExtraStyle="bg-[url('/images/ColorfulBackground.png')] py-[50px] lg:py-[0] lg:pt-[177px] lg:pb-[180px] px-[20px] lg:px-[347px] mb-[100px] lg:mb-0">
@@ -26,24 +11,28 @@ export const ContactUsSection = ()=>{
         <MainFontText text="Do you want to start a campaign?" extrastyle="text-[30px] md:text-[42px] pb-[7px]"/>
         <p className="font-main_font font-normal">Leave us your email and we will contact you with all the information</p>
       </div>
-      <form className="sm:flex m-auto mt-[41px] w-fit" method="post" onSubmit={onSubmit}>
-        <input 
-          className="focus:outline-none w-fit w-[320px] lg:w-[383px] h-[48px] mr-[16px] pl-6 border border-[#E6E6E6] rounded-xl main-input my-4" name="email" aria-label="Email" required
-          type="email" 
-          placeholder="Email" 
-          disabled={loading || error || sent}
-        />
-        <div className="flex">
-          <Button extrastyle="m-auto w-[139px]" text="Contact us"/>
-        </div>
-      </form>
+      <div className="w-full flex">
+        <Button href="mailto://info@decentree.com" extrastyle="mt-[41px] m-auto w-[139px]" text="Contact us"/>
+      </div>
     </Section>
   )
 }
 
-/*#if loading}
-				Sending..
-			{:else if error} Error occured
-			{:else if sent} Successfuly sent
-			{:else} Send 
-        {/if*/
+/*
+  const sgMail = require('@sendgrid/mail')
+  sgMail.setApiKey(`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'" > sendgrid.env`)
+  const msg = {
+    to: 'test@example.com', // Change to your recipient
+    from: 'test@example.com', // Change to your verified sender
+    subject: 'Sending with SendGrid is Fun',
+    text: 'and easy to do anywhere, even with Node.js',
+    html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+  }
+  sgMail
+    .send(msg)
+    .then(() => {
+      console.log('Email sent')
+    })
+    .catch((error:any) => {
+      console.error(error)
+    })*/
