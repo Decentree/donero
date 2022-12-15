@@ -33,7 +33,7 @@ export const HowDoesDoneroWorkSection = ()=>{
     <Section sectionExtraStyle="bg-center bg-no-repeat bg-[url('/images/ColorfulBackground.png')] xl:h-[729px] py-[50px] lg:py-[139px]">
       <div className="px-[22px]">
         <MainFontText text="HOW DOES DONERO WORK" extrastyle="text-center xl:text-left text-base"/>
-        <MainFontText text="Create campaigns and collect dontations via crypto" extrastyle="text-center xl:text-left text-[30px] md:text-[42px] xl:w-[615px] pb-[51px]"/>
+        <MainFontText text="Create campaigns and collect donations via crypto" extrastyle="text-center xl:text-left text-[30px] md:text-[42px] xl:w-[615px] pb-[51px]"/>
       </div>
       <div className="justify-between xl:flex">
         {DATA.map(section=>{

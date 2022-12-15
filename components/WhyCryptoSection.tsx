@@ -9,7 +9,7 @@ import Ethereum from "public/images/Ethereum.png"
 export const WhyCryptoSection =()=>{
 
   const WhyCryptoSectionData = [
-    "Donate with crypto currencies",
+    "Global donations made easy",
     "Direct transfer without any middleman",
     "Easier accounting",
     "Publicly verifiable donations",
