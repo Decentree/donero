@@ -8,8 +8,8 @@ import Technology from "public/images/Technology.png"
 
 export const TopSection = ()=>{
   return(
-    <Section backgroundColor="bg-main_green" sectionExtraStyle="lg:h-[709px] pt-[37.5px]">
-      <div className="mx-[22px] flex px-10 xl:px-0 mb-[-500px]">
+    <Section backgroundColor="min-h-[400px] bg-main_green" sectionExtraStyle="lg:h-[709px] pt-[37.5px]">
+      <div className="mx-[22px] flex px-10 xl:px-0 mb-[-450px] sm:mb-[-500px]">
         <div>
           <Donero />
         </div>

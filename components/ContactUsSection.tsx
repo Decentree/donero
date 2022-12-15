@@ -12,7 +12,7 @@ export const ContactUsSection = ()=>{
         <p className="font-main_font font-normal">Send us an email with all the information that you have</p>
       </div>
       <div className="w-full flex">
-        <Button href="mailto://info@decentree.com" extrastyle="mt-[41px] m-auto w-[139px]" text="Contact us"/>
+        <Button href="mailto:info@decentree.com" extrastyle="mt-[41px] m-auto w-[139px]" text="Contact us"/>
       </div>
     </Section>
   )
